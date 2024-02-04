@@ -1,12 +1,12 @@
-##CODE-CHALLENGE.
+CODE-CHALLENGE.
 
-##Bank of Flatiron is a simple mini web application that allows users to manage their transactions.
+Bank of Flatiron is a simple mini web application that allows users to manage their transactions.
 
 Users can add new transactions.
 View existing transactions.
 Search for a transactions.
 
-##Features
+Features
 
 Add Transaction Form
 Users can fill out a form to add a new transaction.
@@ -18,10 +18,10 @@ Search bar
 Transactions can be filtered by description.
 
 
-##Support And Contact Details.
+Support And Contact Details.
 Feel free to reach out to me on Email at louisodhiambo20@gmail.com.
 
-##License
+License
 MIT License
 
 

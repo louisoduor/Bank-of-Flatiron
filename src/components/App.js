@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import SearchBar from './SearchBar';
 import TransactionTable from './TransactionTable';
 import TransactionForm from './TransactionForm';
 
@@ -54,12 +53,10 @@ const App = () => {
 
   return (
     <div className="container">
-      <h1>Bank Transactions App</h1>
-      <TransactionForm onAddTransaction={handleAddTransaction} />
-      <SearchBar onSearchChange={handleSearchChange} />
-      <TransactionTable transactions={filteredTransactions} />
-     
-    </div>
+    <h1>Bank Transactions App</h1>
+    <TransactionForm onAddTransaction={handleAddTransaction} />
+    <TransactionTable transactions={filteredTransactions} />
+  </div>
   );
 };
 

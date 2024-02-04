@@ -21,6 +21,7 @@ const TransactionForm = ({ onAddTransaction }) => {
 
    
     setNewTransaction({
+      date : '',
       description: '',
       amount: '',
       category: '',

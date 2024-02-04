@@ -104,6 +104,27 @@
       "category": "Income",
       "date": "2024-02-22",
       "id": 15
+    },
+    {
+      "description": "Office Monday Lunch",
+      "amount": "2000",
+      "category": "Food",
+      "date": "2024-02-27",
+      "id": 16
+    },
+    {
+      "description": "Office Tuesday Lunch",
+      "amount": "3000",
+      "category": "Food",
+      "date": "2024-02-20",
+      "id": 17
+    },
+    {
+      "description": "Office Tuesday Lunch",
+      "amount": "3000",
+      "category": "Food",
+      "date": "2024-02-27",
+      "id": 18
     }
   ]
 }

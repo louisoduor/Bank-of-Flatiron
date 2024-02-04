@@ -92,13 +92,6 @@
       "id": 13
     },
     {
-      "date": "2022-07-09",
-      "description": "Office lunch Wednesday",
-      "category": "Food",
-      "amount": "3000",
-      "id": 14
-    },
-    {
       "description": "Paycheck from John's Burgers",
       "amount": "2000",
       "category": "Income",
@@ -118,13 +111,6 @@
       "category": "Food",
       "date": "2024-02-20",
       "id": 17
-    },
-    {
-      "description": "Office Tuesday Lunch",
-      "amount": "3000",
-      "category": "Food",
-      "date": "2024-02-27",
-      "id": 18
     }
   ]
 }

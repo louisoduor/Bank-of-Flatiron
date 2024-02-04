@@ -18,13 +18,30 @@ const TransactionTable = () => {
   useEffect(() => {
     // Filter transactions based on search term
     const filtered = transactions.filter(transaction =>
-      transaction.description.toLowerCase().includes(searchTerm.toLowerCase())
+      transaction.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      transaction.category.toLowerCase().includes(searchTerm.toLowerCase())
     );
     setFilteredTransactions(filtered);
   }, [searchTerm, transactions]);
 
   const handleSearchChange = (term) => {
     setSearchTerm(term);
+  };
+
+  const handleDelete = async (id) => {
+    try {
+      // Delete the transaction from the server
+      await fetch(`http://localhost:3000/transactions/${id}`, {
+        method: 'DELETE',
+      });
+
+      // Update the React state
+      const updatedTransactions = transactions.filter(transaction => transaction.id !== id);
+      setTransactions(updatedTransactions);
+      setFilteredTransactions(updatedTransactions);
+    } catch (error) {
+      console.error('Error deleting transaction:', error);
+    }
   };
 
   return (
@@ -41,6 +58,7 @@ const TransactionTable = () => {
             <th>Description</th>
             <th>Amount</th>
             <th>Category</th>
+            <th>Action</th>
           </tr>
         </thead>
         <tbody>
@@ -50,6 +68,9 @@ const TransactionTable = () => {
               <td>{transaction.description}</td>
               <td>{transaction.amount}</td>
               <td>{transaction.category}</td>
+              <td>
+                <button onClick={() => handleDelete(transaction.id)}>Delete</button>
+              </td>
             </tr>
           ))}
         </tbody>

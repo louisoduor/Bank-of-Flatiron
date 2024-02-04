@@ -8,13 +8,13 @@ Search for a transactions.
 
 Features
 
-Add Transaction Form
+1 Add Transaction Form
 Users can fill out a form to add a new transaction.
 
-Transaction List
+2 Transaction List
 A list of transactions with details like date, description, category and amount. 
 
-Search bar
+3 Search bar
 Transactions can be filtered by description.
 
 
